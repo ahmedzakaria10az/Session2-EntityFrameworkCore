@@ -17,6 +17,6 @@ namespace Session2_EntityFrameworkCore.Models
         // One-to-One Relationship with Attendee    
         public int AttendeeId { get; set; }
 
-        public Attendee Attendee { get; set; } = null!; 
+        public Attendee Attendee { get; set; } = null!;
     }
 }

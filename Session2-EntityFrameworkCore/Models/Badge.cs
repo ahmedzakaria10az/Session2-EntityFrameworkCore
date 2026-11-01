@@ -13,8 +13,10 @@ namespace Session2_EntityFrameworkCore.Models
         public DateTime IssuedDate { get; set; }
         public BadgeTier Tier { get; set; }
 
+
+        // One-to-One Relationship with Attendee    
         public int AttendeeId { get; set; }
 
-        public Attendee Attendee { get; set; }
+        public Attendee Attendee { get; set; } = null!; 
     }
 }

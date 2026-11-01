@@ -37,8 +37,9 @@ namespace Session2_EntityFrameworkCore.Models
 
         [NotMapped]
         public string FullAddress => $"{Street}-{City}-{Country}-{PostalCode}";
-        
-        // One-to-One
+
+
+        // One-to-One Relationship with Badge   
         public Badge? Badge { get; set; }
     }
 }

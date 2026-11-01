@@ -14,6 +14,6 @@ namespace Session2_EntityFrameworkCore.Models
         public int MaxAttendees { get; set; }
 
         public int OrganizerId { get; set; }
-        public Organizer Organizer { get; set; }
+        public Organizer Organizer { get; set; } = null!;
     }
 }

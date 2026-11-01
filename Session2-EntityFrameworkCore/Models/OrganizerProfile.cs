@@ -13,6 +13,6 @@ namespace Session2_EntityFrameworkCore.Models
 
 
         public int OrganizerId { get; set; }
-        public Organizer Organizer { get; set; }
+        public Organizer Organizer { get; set; } = null!;
     }
 }

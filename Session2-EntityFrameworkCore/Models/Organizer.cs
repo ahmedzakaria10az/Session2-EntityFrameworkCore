@@ -20,11 +20,12 @@ namespace Session2_EntityFrameworkCore.Models
 
         public bool IsVerified { get; set; }
 
+
         // One-to-One Relationship with OrganizerProfile
         public OrganizerProfile? Profile { get; set; }
 
-        // One-to-Many
-        public ICollection<Event> Events { get; set; }
+        // One-to-Many Relationship with Event  
+        public ICollection<Event> Events { get; set; } = null!;
             
     }
 }
